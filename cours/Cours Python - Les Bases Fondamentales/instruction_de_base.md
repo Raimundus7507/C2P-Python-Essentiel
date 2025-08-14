@@ -44,7 +44,7 @@ False
 Parmi ces éléments, identifiez le type de donnée :
 - `"Python"`
 - `100`
-- `3.14` #NB : les 👉` ` 👈sont utilisés juste pour metre certaains termes en couleur
+- `3.14` 
 - `True`
 - `"123"`
 
