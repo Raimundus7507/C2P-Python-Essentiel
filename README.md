@@ -46,8 +46,8 @@ C2P-Python-Essentiel/
 
 💬Rejoins la communauté
 
-[Groupe WhatsApp C2P](https://chat.whatsapp.com/GNtDfxG6SzEHmDXRpovN3m)
-[Serveur Discord ](https://discord.gg/XgSFvzJd)
+[Groupe WhatsApp C2P] https://chat.whatsapp.com/GNtDfxG6SzEHmDXRpovN3m
+[Serveur Discord ] https://discord.gg/XgSFvzJd
 
 ---
 
