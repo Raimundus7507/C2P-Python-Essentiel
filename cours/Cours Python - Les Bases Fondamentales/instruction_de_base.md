@@ -22,7 +22,6 @@ En Python, nous travaillons principalement avec ces types de données :
 
 ### Exemples concrets
 
-```python
 # Du texte
 "Salut tout le monde !"
 "J'ai 25 ans"
@@ -40,13 +39,12 @@ En Python, nous travaillons principalement avec ces types de données :
 # Des valeurs logiques
 True
 False
-```
 
-### 🎯 Exercice 1 - Identifier les données
+### Exercice 1 - Identifier les données
 Parmi ces éléments, identifiez le type de donnée :
 - `"Python"`
 - `100`
-- `3.14`
+- `3.14` #NB : les 👉` ` 👈sont utilisés juste pour metre certaains termes en couleur
 - `True`
 - `"123"`
 
@@ -71,23 +69,26 @@ Une **variable** est comme une étiquette que vous collez sur une boîte pour la
 ### Comment créer une variable
 
 La syntaxe est très simple :
-```
+````python
+
 nom_de_la_variable = valeur
-```
+
 
 ### Exemples pratiques
 
-```python
 # Créer des variables
 prenom = "Alice"
 age = 25
 taille = 1.65
 est_etudiant = True
 
+
 # Utiliser les variables
 print(prenom)  # Affiche : Alice
 print(age)     # Affiche : 25
-```
+print(taille)  # Affiche : 1.65
+print(est_etudiant)  # Affiche : True
+````
 
 ### Pourquoi utiliser des variables ?
 
@@ -96,8 +97,8 @@ Les variables permettent de :
 - **Modifier** facilement une valeur
 - **Rendre** le code plus lisible
 
-```python
 # Sans variable (pas pratique)
+````python
 print("Bonjour Fatou !")
 print("Fatou a 30 ans")
 print("Au revoir Fatou !")
@@ -107,9 +108,9 @@ nom = "Fatou"
 print("Bonjour", nom, "!")
 print(nom, "a 30 ans")
 print("Au revoir", nom, "!")
-```
+````
 
-### 🎯 Exercice 2 - Créer vos premières variables
+### Exercice 2 - Créer vos premières variables
 Créez des variables pour stocker :
 - Votre prénom
 - Votre âge
@@ -120,9 +121,9 @@ Créez des variables pour stocker :
 <summary>Solution exemple</summary>
 
 ```python
-prenom = "Thomas"
+prenom = "Paskod"
 age = 28
-ville = "Paris"
+ville = "Lomé"
 aime_chocolat = True
 ```
 </details>
@@ -191,7 +192,7 @@ nombre_utilisateurs = 10
 valeur_temporaire = "test"
 ```
 
-### 🎯 Exercice 3 - Nommage des variables
+### Exercice 3 - Nommage des variables
 Corrigez ces noms de variables pour qu'ils respectent les bonnes pratiques :
 
 ```python
@@ -267,13 +268,13 @@ print(b)  # Affiche : 10
 x, y = 5, 10
 
 # Informations d'une personne
-prenom, nom, age = "Kofi", "Asante", 28
+prenom, nom, age = "Kossi", "Kossivi", 28
 
 # Initialisation de compteurs
 compteur1 = compteur2 = compteur3 = 0
 ```
 
-### 🎯 Exercice 4 - Affectation multiple
+### Exercice 4 - Affectation multiple
 1. Créez trois variables `rouge`, `vert`, `bleu` avec la valeur 255
 2. Créez en une ligne les variables : `produit = "Ordinateur"`, `prix = 899.99`, `disponible = True`
 3. Échangez le contenu des variables `x = 100` et `y = 200`
@@ -319,10 +320,10 @@ print("C'est parti pour l'aventure !")
 ### Afficher des variables
 
 ```python
-nom = "Pierre"
+nom = "Prince"
 age = 30
 
-print(nom)    # Affiche : Pierre
+print(nom)    # Affiche : Prince
 print(age)    # Affiche : 30
 ```
 
@@ -365,7 +366,7 @@ print("Soustraction:", a - b)  # Affiche : Soustraction: 5
 print("Multiplication:", a * b) # Affiche : Multiplication: 50
 ```
 
-### 🎯 Exercice 5 - Maîtriser print()
+### Exercice 5 - Maîtriser print()
 1. Affichez votre présentation : "Je suis [nom] et j'ai [age] ans"
 2. Affichez trois nombres séparés par des points
 3. Créez un petit programme qui affiche un menu :
@@ -381,8 +382,8 @@ print("Multiplication:", a * b) # Affiche : Multiplication: 50
 
 ```python
 # 1. Présentation
-nom = "Thomas"
-age = 25
+nom = "Paskod"
+age = 20
 print("Je suis", nom, "et j'ai", age, "ans")
 
 # 2. Nombres avec des points
@@ -471,16 +472,17 @@ print("Votre taille est de", taille, "mètres")
 ```python
 print("=== CALCULATRICE D'ÂGE ===")
 nom = input("Comment vous appelez-vous ? ")
+annee_courante = int(input("Entrer l'année courante : "))
 annee_naissance = int(input("En quelle année êtes-vous né(e) ? "))
 
 # Calcul de l'âge (approximatif)
-age_approximatif = 2025 - annee_naissance
+age_approximatif = annee_courante - annee_naissance
 
 print("Bonjour", nom, "!")
 print("Vous avez environ", age_approximatif, "ans")
 ```
 
-### 🎯 Exercice 6 - Programme interactif
+### Exercice 6 - Programme interactif
 Créez un programme qui :
 1. Demande le nom de l'utilisateur
 2. Demande son plat préféré
@@ -498,6 +500,7 @@ frequence = int(input("Combien de fois par semaine le mangez-vous ? "))
 
 print()
 print("Résumé :")
+print("-------")
 print("Nom :", nom)
 print("Plat préféré :", plat)
 print("Fréquence :", frequence, "fois par semaine")
@@ -507,7 +510,7 @@ print("Génial", nom, "! Vous mangez", plat, frequence, "fois par semaine !")
 
 ---
 
-## 🚀 Projet final - Carnet d'identité numérique
+## Projet final - Carnet d'identité numérique
 
 Maintenant que vous maîtrisez les bases, créons ensemble un petit programme qui utilise tout ce que nous avons appris !
 
@@ -553,7 +556,7 @@ print("=" * 40)
 print("Merci", prenom, "! Votre profil a été créé avec succès !")
 ```
 
-### 🎯 Défi bonus
+### Défi bonus
 Améliorez le programme en ajoutant :
 - Une question sur le sport préféré
 - Le calcul de l'âge en 2030
@@ -561,7 +564,7 @@ Améliorez le programme en ajoutant :
 
 ---
 
-## 📚 Récapitulatif de ce que vous avez appris
+## Récapitulatif de ce que vous avez appris
 
 Félicitations ! Vous maîtrisez maintenant :
 
@@ -586,7 +589,7 @@ Félicitations ! Vous maîtrisez maintenant :
 
 ---
 
-## 🎯 Pour aller plus loin
+## Pour aller plus loin
 
 Maintenant que vous avez ces bases solides, vous êtes prêts à découvrir :
 - Les conditions (if, else)
@@ -596,8 +599,6 @@ Maintenant que vous avez ces bases solides, vous êtes prêts à découvrir :
 
 Continuez à pratiquer et n'hésitez pas à expérimenter ! La programmation s'apprend en codant.
 
-**Bonne continuation dans votre apprentissage Python ! 🐍**
-
 ---
 
-*Ce cours fait partie de la formation C2P (Communauté Python pour débutants). Pour plus de ressources et d'exercices, consultez notre dépôt GitHub.*
+*Ce cours fait partie de la formation C2P (https://chat.whatsapp.com/GNtDfxG6SzEHmDXRpovN3m). Pour plus de ressources et d'exercices, consultez notre groupe watsapp 👆*
