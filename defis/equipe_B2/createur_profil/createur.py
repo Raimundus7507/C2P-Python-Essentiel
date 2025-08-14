@@ -1,0 +1,38 @@
+# Affichage de l'utilité du programme
+print('Bienvenue dans le Créateur de Profil Personnel')
+print('Je vais vous poser quelques Questions pour mieux vous connaitre\n')
+
+# Prise des informations
+name = input('Quel est votre nom complet ? ')
+age = input('Quel age avez-vous ? ')
+home = input('Dans quelle ville habitez-vous ? ')
+preferred_color = input('Quelle est votre couleur préférée ? ')
+meal_favorite = input('Quel est votre plat favori ? ')
+sport = input('Quel sport pratiquez-vous ? ')
+job = input('Quel métier voulez_vous faire ? ')
+vision = input('Quel est votre objectif cette année ? ')
+book = input('Quel est votre livre préféré ? ')
+music = input('Quel type de musique aimez-vous ? ')
+weekend = input('Que faite vous le weekend ? ')
+
+# Affichages des informations
+print('=============================================================================')
+print('\t\tVOTRE PROFIL PERSONNEL')
+print('=============================================================================')
+print('\nNom : ', name)
+print('Age : ', age, ' ans')
+print('Ville : ', home)
+print('\nPRÉFÉRENCES')
+print('Couleur : ', preferred_color)
+print('Plat : ', meal_favorite)
+print('Sport : ', sport)
+print('Musique : ', music)
+print('\nPROJETS ET AMBITIONS')
+print('Métier souhaité : ', job)
+print('Objectifs 2024 : ', vision)
+print('\nLOISIRS')
+print('Lecture : ', book)
+print('Weekend : ', weekend)
+
+print('\n', name, ', votre profile est maintenat créé!')
+print('Vous êtes une personne de ', age, ' ans passionnée par le ', job, '.')
