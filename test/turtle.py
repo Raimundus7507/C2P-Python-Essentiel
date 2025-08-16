@@ -1,4 +1,4 @@
 from turtle import*
 
 #config
-bgcolor:('black')
+bgcolor:('blue')
