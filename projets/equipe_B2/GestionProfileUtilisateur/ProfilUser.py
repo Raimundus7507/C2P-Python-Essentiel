@@ -49,59 +49,33 @@ print('='*32)
 
 print('\n🔐 Veuillez maintenant vous connecter pour accéder à votre profil.\n')
 
-# Connexion à votre profile créer et Vérification du nom
-connexionNom = input('Nom d\'utilisateur : ')
-cpt = 0
-while cpt < 3:
-    if connexionNom == nomComplet:
-        break
+# Connexion à votre profile créer et Vérification du nom et du mot de passe
+nbTentatives = 0
+while nbTentatives < 3:
+    connexionNom = input('Nom d\'utilisateur : ')
+    connexionMotDePasse = input('Mot de passe : ')
+    if connexionMotDePasse == motDePasse and connexionNom == nomComplet:
+        nbTentatives = 3
     else:
-        print('Votre nom d\'utilisateur n\'est pas correct.')
-        connexionNom = input('Nom d\'utilisateur : ')
-    cpt += 1
-
-# Connexion à votre profile créer et Vérification du mot de passe
-connexionMotDePasse = input('Mot de passe : ')
-cpt = 0
-while cpt < 3:
-    if connexionMotDePasse == motDePasse:
-        break
-    else:
-        print('Mot de passe incorrect.')
-        connexionMotDePasse = input('Mot de passe : ')
-    cpt += 1
+        print('Nom d\'utilisateur ou mot de passe incorrect. Veuillez réessayer.\n')
+        nbTentatives += 1
 
 # Recommencer la connexion si le mot de passe ou le nom n'est pas correct
-while connexionMotDePasse != motDePasse and connexionNom != nomComplet:
-    connexionNom = input('Nom d\'utilisateur : ')
-    cpt = 0
-    while cpt < 3:
-        if connexionNom == nomComplet:
-            break
-        else:
-            print('Votre nom d\'utilisateur n\'est pas correct.')
-            connexionNom = input('Nom d\'utilisateur : ')
-        cpt += 1
-    connexionMotDePasse = input('Mot de passe : ')
-    cpt = 0
-    while cpt < 3:
-        if connexionMotDePasse == motDePasse:
-            break
-        else:
-            print('Mot de passe incorrect.')
-            connexionMotDePasse = input('Mot de passe : ')
-        cpt += 1
+if connexionMotDePasse == motDePasse and connexionNom == nomComplet:
+    print(f'\n✅ CONNEXION RÉUSSIE ! Bienvenue {connexionNom} ! ✅')
 
-print(f'\n✅ CONNEXION RÉUSSIE ! Bienvenue {connexionNom} ! ✅')
-
-# Affichage du profil personnel
-print(f'\n{"=" * 30}')
-print('📋 VOTRE PROFIL PERSONNEL 📋')
-print('=' * 30)
-print(f'👤 Nom : {nomComplet}')
-print(f'🎂 Age : {age} ans')
-print(f'🌃 Ville : {residence}')
-print('🔐 Compte sécurisé avec mots de récuperation')
-print(f'{"=" * 44}')
+    # Affichage du profil personnel
+    print(f'\n{"=" * 30}')
+    print('📋 VOTRE PROFIL PERSONNEL 📋')
+    print('=' * 30)
+    print(f'👤 Nom : {nomComplet}')
+    print(f'🎂 Age : {age} ans')
+    print(f'🌃 Ville : {residence}')
+    print('🔐 Compte sécurisé avec mots de récuperation')
+    print(f'{"=" * 44}')
+else:
+    print(f'\n{"=" * 56}')
+    print('❌ TROP DE TENTATIVES. VOTRE COMPTE VIENS D\'ÊTRE BLOQUÉ. ❌\nVEUILLEZ CONTACTER LE SERVICE CLIENT POUR PLUS D4INFORMATIONS.')
+    print(f'{"=" * 56}')
 
 print('\nMerci d\'utilisé notre système ! 🙂')
