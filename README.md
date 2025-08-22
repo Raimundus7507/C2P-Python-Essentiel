@@ -117,7 +117,7 @@ Pour créer une nouvelle équipe :
 5. **Lance-toi** dans ton premier défi ou projet !
 
 ```bash
-git clone https://github.com/[organization]/C2P-Python-Essentiel.git
+git clone https://github.com/Paskod121/C2P-Python-Essentiel.git
 cd C2P-Python-Essentiel
 ```
 
