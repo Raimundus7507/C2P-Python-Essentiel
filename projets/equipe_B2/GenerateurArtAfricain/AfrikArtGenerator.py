@@ -25,9 +25,15 @@ print(f"🍽 Plat préféré : {plat}\n")
 
 # Drapeau (symbolique)
 print("🇹🇬 DRAPEAU DU TOGO 🇹🇬\n")
+for i in range (1):
+    print("🟥" * 9, "🟩" * 12)
+    print("🟥" * 4,"☆", "🟥" * 4, "🟨" * 12)
+    print("🟥" * 9, "🟩" * 12)
+    print("🟨" * 21)
+    print("🟩" * 21)
 
 # Générateur de motifs
-reponse = input(f"👋 {nom}, voulez-vous créer des motifs artistiques ?\nTapez 'oui' pour continuer : ").lower()
+reponse = input(f"\n👋 {nom}, voulez-vous créer des motifs artistiques ?\nTapez 'oui' pour continuer : ").lower()
 
 while reponse == "oui":
     print("\n🎨 === GÉNÉRATEUR DE MOTIFS ===")
