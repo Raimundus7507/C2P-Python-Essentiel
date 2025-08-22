@@ -218,9 +218,11 @@ Des échanges, du soutien, des projets concrets, et surtout… des développeurs
 
 Tu veux progresser, rire, partager, apprendre à ton rythme ?  
 
-[COMMUNAUTÉ C2P sur Discord](https://discord.gg/JuEbGcFC)
-[COMMUNAUTÉ C2P sur LinkedIn](https://www.linkedin.com/company/c2p-community/)
-[COMMUNAUTÉ C2P sur WhatsApp](https://chat.whatsapp.com/GNtDfxG6SzEHmDXRpovN3m)
+|| [COMMUNAUTÉ C2P sur Discord](https://discord.gg/JuEbGcFC)
+
+|| [COMMUNAUTÉ C2P sur LinkedIn](https://www.linkedin.com/company/c2p-community/)
+
+|| [COMMUNAUTÉ C2P sur WhatsApp](https://chat.whatsapp.com/GNtDfxG6SzEHmDXRpovN3m)
 
 
 ---
