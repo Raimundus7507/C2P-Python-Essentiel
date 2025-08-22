@@ -18,6 +18,7 @@ print(f"✅ Ville enrégistreé : {ville}\n")
 print("=" * 40)
 print("🔐 CONFIGURATION DE VOTRE MOT DE PASSE")
 print("=" * 40)
+print()
 
 password = str(input("🔑 Créer un mot de passe sécurisé (minimum 8 caractères) : "))
 while len(password) < 8 :
@@ -41,6 +42,7 @@ print("🎉 PROFIL CRÉÉ AVEC SUCCES ! 🎉")
 print("=" * 40)
 
 # Connection
+print()
 print("🔐 Veuillez maintenant vous connecter pour accéder à votre profil.\n")
 
 nb_tentative = 1
@@ -61,6 +63,7 @@ if username == fullName and password == mot2pass :
     print("=" * 40)
     print("📔 VOTRE PROFIL PERSONNEL")
     print("=" * 40)
+    print()
     print(f"👤 Nom   : {fullName}")
     print(f"🎂 Âge   : {age} ans")
     print(f"🏙  Ville : {ville}")
