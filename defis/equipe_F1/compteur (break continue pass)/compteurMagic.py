@@ -15,6 +15,7 @@ for i in range(1, 21, 1):
     elif i == 13:
         print(f"{i} (Nombre mystère - on ne fait rien)")
         pass
+    # Salut juste un test
         continue
     elif i == 17:
         print("\nSTOP ! Nombre 17 trouvé - arrêt du compteur !")
