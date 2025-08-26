@@ -89,9 +89,12 @@ while True:
 
     #Demande à l'user s'il va continuer ou pas
 
-    saisi =input('\nVeux-tu refaire un calcul (oui/non) ? : ').lower() #le lower permet de mettre en miniscule la reponse de l'user
+    saisi =input('\nVeux-tu refaire un calcul (oui/non) ? : ').lower()
+    #le lower permet de mettre en miniscule la reponse de l'user
 
     #verification du choix de l'user avec cette boucle if et break pour arreter le programme
     if saisi != "oui":
-            print(f"\nMerci d'avoir utilisé le gestionnaire de budget ! 👋")
-    break
+        print(f"\nMerci d'avoir utilisé le gestionnaire de budget ! 👋")
+        break
+    else:
+        continue
