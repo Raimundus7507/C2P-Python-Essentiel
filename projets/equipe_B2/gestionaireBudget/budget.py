@@ -84,24 +84,14 @@ while True:
 
         conseilPersonnalise(int(pourcentageEpargne))
     else :
-        print('Conseil : Danger ! Vous etez en déficites vous devez régler ce problème déficitaire \nBeaucoup de courage et remédier à çà au plus vite')
+        print(f'Conseil : Danger ! Vous etez en déficites vous devez régler ce problème déficitaire \nBeaucoup de courage et remédier à çà au plus vite')
 
 
-     #demande à l'user s'il va continuer ou pas
+    #Demande à l'user s'il va continuer ou pas
 
-    saisi =input('Veux-tu refaire un calcul (oui/non) ? : ').lower()
+    saisi =input('\nVeux-tu refaire un calcul (oui/non) ? : ').lower() #le lower permet de mettre en miniscule la reponse de l'user
 
+    #verification du choix de l'user avec cette boucle if et break pour arreter le programme
     if saisi != "oui":
-            print("Merci d'avoir utilisé le gestionnaire de budget ! 👋")
+            print(f"\nMerci d'avoir utilisé le gestionnaire de budget ! 👋")
     break
-
-
-
-
-
-
-
-
-
-
-
