@@ -62,7 +62,7 @@ def afficher_recap(revenu, depenses, reste, logement, nourriture, transport, loi
     print("  - Transport : {:.0f} Fcfa".format(transport))
     print("  - Loisirs : {:.0f} Fcfa".format(loisirs))
     print("Reste disponible : {:.0f} Fcfa".format(reste))
-    print("\nConseil : " + conseil + "\n")
+    print("\nConseil : " + conseil + "\n" )
 
 
 main()
