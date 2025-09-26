@@ -72,7 +72,7 @@ print(f"⭐ Mention BIEN (≥ 14) : {moyenne >= 14}")
 print(f"✨ Mention ASSEZ BIEN (≥ 12) : {moyenne >= 12}")
 print(f"✅ ADMIS en classe supérieure (≥ 10) : {moyenne >= 10}")
 print(f"❌ ÉCHEC (< 10) : {moyenne < 10}")
-H
+
 # Trouver et Affichage des matières dominante
 print(f"Mathématiques en tête : {(mathem > PCT) and (mathem > français) and (mathem > Anglais) and (mathem > SVT) and (mathem > Histoire)}")
 print(f"Français en tête : {(français > PCT) and (français > mathem) and (français > Anglais) and (français > SVT) and (français > Histoire)}")
