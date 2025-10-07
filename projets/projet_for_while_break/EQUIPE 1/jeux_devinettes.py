@@ -26,7 +26,7 @@ menu = """\n🎮 JEUX DE DEVINETTE
 print(menu)
 
 choix = input("\n🔀 Entrer votre choix : ")
-while choix != 6:
+while choix != "6":
     if choix == "1": # Deviner un nombre
         print("🔢 DEVINER UN NOMBRE \n")
         nombre_parties_nombre += 1
@@ -117,7 +117,7 @@ while choix != 6:
     elif choix == "4": #Deviner la lettre
         print("🔤 DEVINER LA LETTRE \n")
         nombre_parties_lettre += 1
-        alphabet = "AaBbCcDdEeFfGgHhIiKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz"
+        alphabet = "ABCDEFGHIKLMNOPQRSTUVWXYZ"
         lettre = random.choice(alphabet)
         lettre_essai = 1
         while lettre_essai <= 10:
@@ -134,6 +134,7 @@ while choix != 6:
             lettre_essai += 1
         else:
             print(f"\n💀 Vous atteint la limite de 10 essais. La bonne lettre était {lettre} ")
+            break
 
     elif choix == "5": #voir mes statistiques
         print("📊 VOS STATS ")
