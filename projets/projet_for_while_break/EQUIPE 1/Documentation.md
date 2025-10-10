@@ -14,4 +14,4 @@ Le code a été écrit dans un google meet. La présentation fut faite par Kadia
 
 ## Difficultés rencontrées : 
 
-Nous avions remarqué que la fonctionnalité **Deviner la lettre** nesséciterait des notions que nous n'avions pas encore vu dans le cours. Alors nous avions décidé de le simplifier.
+Nous avions remarqué que la fonctionnalité **Deviner la lettre** nécessiterait des notions que nous n'avions pas encore vu dans le cours. Alors nous avions décidé de le simplifier.
