@@ -6,7 +6,7 @@ while True :
     CPU_Guess = random.randint(1, 100)
     print(f"""\n
                            {'_'*4} Je pense a un nombre entre 0 et 100 {'_'*4} \n
-                            Vous avez 7 essais (tapez 0 pour abandonner)\n""")
+                            Vous avez {chances} essais (tapez 0 pour abandonner)\n""")
     while cnt < chances+1:
         user_answer = int(input(f"essais {cnt}/{chances} : "))
         if user_answer == 0 or user_answer == 0 :

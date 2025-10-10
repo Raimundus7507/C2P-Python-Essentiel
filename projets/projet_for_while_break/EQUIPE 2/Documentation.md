@@ -1,5 +1,9 @@
 # Projet : Mini-Jeux en Python
 
+- ##  participant
+    - ###             ADAKANOU Koffi Heritier
+    - ###             AMEGANDZIN Komlan Josué
+
 Créer un petit programme regroupant plusieurs mini-jeux 
 dans la console (deviner un nombre, lancer de dés, quiz, 
 deviner une lettre).
