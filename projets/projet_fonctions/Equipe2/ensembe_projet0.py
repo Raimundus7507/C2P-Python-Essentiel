@@ -1,7 +1,7 @@
-#afficher de la message de bienvenu
-print("=======================================================")
+#afficher bienvenue
+print("~"*56)
 print("|| BIENVENUE DANS LA GESTION DES INSCRIPTIONS SCOLAIRE || ")
-print("=======================================================")
+print("~"*56)
 #creation du fonction qui affiche le menu
 def afficher_menu():
     print("\n1.Inscrire un élève")
@@ -239,7 +239,7 @@ def calcul_frais4(classe,etablissement,bourse = "aucune"):
     #calcul
     frais_totale = frais_basique * (1-reduction) +frais_APE + frais_cantine + frais_transport
     #recette totale
-    recette_totale += frais_totale
+    return frais_totale
 
     print("CALCUL DETAILLE DES FRAIS")
     print("-----------------------------")
