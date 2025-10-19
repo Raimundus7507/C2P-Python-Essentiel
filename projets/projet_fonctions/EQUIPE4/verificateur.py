@@ -1,4 +1,4 @@
-#Fonction de vérification de la saisi utilisateur
+# Fonction de vérification de la saisi utilisateur
 def verificator(messages, typ ):
     while True:
         try:

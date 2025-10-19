@@ -231,12 +231,9 @@ def detail_frais():
     print("DETAIL DES FRAIS")
     print(f"- Frais de base : {frais_base}")
     print(f"- Réduction bourse ({reduction*100}%) : -{frais_base*reduction}")
-    APE = 2000
-    cantine = 1000
-    transport = 1500
-    print(f"- Frais APE : {APE}FCFA")
-    print(f"- Cantine : {cantine}FCFA")
-    print(f"- Frais transport : {transport}FCFA")
+    print(f"- Frais APE : 2000FCFA")
+    print(f"- Cantine : 1000FCFA")
+    print("- Frais transport : 1500FCFA")
     print(f"- Total à payer : {frais_base*(1- reduction) +4500}FCFA")
 
 # Fonction pour modifier les donnees de l' etudiant
