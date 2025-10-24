@@ -133,9 +133,6 @@ def inscrire_eleve():
     prenom = input("Prénom de l'élève : ")
     age = saisir_age()
     classe = saisie_classe()
-    if not verifier_disponibilite(classe):
-        print("⚠ Nombre de places maximal atteint pour cette classe !")
-        return
     nombre_total_inscrits += 1
     if classe == "6ème":
         effectif_6eme += 1
@@ -279,13 +276,16 @@ def statistic_gene():
     print(f" - Aucune : {eff_bourse_aucune}")
 
 # Programme principal
-def prog_principal():
+def programme_principal():
     print("\nGESTIONNAIRE D'INSCRIPTION SCOLAIRE")
     print("=" * 55)
     afficher_menu()
-    choix = input("Entrer votre choix (1,...,6) : ")
+    choix = input("\nEntrer votre choix (1,...,6) : ")
     while choix != "6":
         if choix == "1":
+            if not verifier_disponibilite(classe):
+                print("\n⚠ Nombre de places maximal atteint pour cette classe !")
+                break
             inscrire_eleve()
         elif choix == "2":
             consult_eleve()
@@ -300,7 +300,7 @@ def prog_principal():
         print("\nGESTIONNAIRE D'INSCRIPTION SCOLAIRE")
         print("-" * 55)
         afficher_menu()
-        choix = input("Entrer votre choix (1,...,6) : ")
+        choix = input("\nEntrer votre choix (1,...,6) : ")
     print("\nMerci d'avoir utilisé le gestionnaire d'inscription ! 👋")
 
-prog_principal()
+programme_principal()
